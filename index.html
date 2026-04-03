@@ -15,114 +15,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hace la página responsiva: ajusta el ancho al dispositivo y establece el zoom inicial en 1 -->
 
-    <title>Hoja de vida Joel deber</title>
-    <!-- Define el título que aparece en la pestaña del navegador -->
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Hoja de vida joel deber</title>
 </head>
 
 <body>
-    <!-- Sección body: contiene todo el contenido visible de la página -->
+    <div class="contenedor">
 
-    <h1 style="text-align: center; font-size: 50px; color: rgb(104, 16, 16);">Hoja de vida</h1>
-    <!-- Título principal de la página, centrado, tamaño 50px y color rojo oscuro -->
+        <!-- TÍTULO -->
+        <h1>Hoja de vida</h1>
 
-    
-    <div style="border: solid 2px; width: 300px;">
-        <!-- Contenedor con borde sólido de 2px y ancho de 300px para los datos personales -->
+        <!-- IMAGEN AL INICIO CENTRADA -->
+        <div class="seccion" style="text-align: center;">
+            <h2>Foto de perfil</h2>
+            <img src="img/descarga.jpg" alt="Foto de perfil" width="300px" height="300px">
+        </div>
 
-        <h2 style="color: rgb(102, 10, 10); font-size: 25px;">
-            Datos personales
-        </h2>
-        <!-- Subtítulo de la sección, color rojo oscuro y tamaño 25px -->
+        <!-- DATOS PERSONALES -->
+        <div class="seccion">
+            <h2>Datos personales</h2>
+            <p>
+                Nombres: Joel Alexander <br>
+                Apellidos: Pillajo Simbaña <br>
+                Cédula de identidad: 1755864327 <br>
+                Edad: 20 años <br>
+                Fecha de nacimiento: 08 de febrero del 2006 <br>
+                Nacionalidad: Ecuatoriano <br>
+                Estado civil: Soltero <br>
+                Sexo: Masculino <br>
+                Dirección: Llano Chico
+            </p>
+        </div>
 
-        <p>Nombres: Joel Alexander <br>
-            <!-- <br> hace un salto de línea sin abrir un nuevo párrafo -->
+        <!-- CONTACTO -->
+        <div class="seccion">
+            <h3>Contacto</h3>
+            <p>
+                Teléfono: 0993344862 <br>
+                Email: joelpillajo0987@gmail.com
+            </p>
 
-            Apellidos: Pillajo Simbaña <br>
-            Cedula de identidad: 1755864327 <br>
-            Edad: 20 años <br>
-            Fecha de nacimiento: 08 de febrero del 2006 <br>
-            Nacionalidad: Ecuatoriano <br>
-            Estado civil: Soltero <br>
-            Sexo: Masculino <br>
-            Dirección: Llano Chico
-    </div>
-    <!-- Cierre del div de datos personales -->
+            <!-- ENLACE A PÁGINA DE REDES SOCIALES -->
+            <h3 style="margin-top: 12px;">Redes sociales</h3>
+            <div class="nav">
+                <a href="mis redes/redes.html">Ver mis redes sociales</a>
+            </div>
+        </div>
 
-   
-    <div style="border: solid 2px; width: 300px;">
-        <!-- Nuevo contenedor con borde sólido de 2px y ancho de 300px para el contacto -->
+        <!-- FORMACIÓN -->
+        <div class="seccion">
+            <h2>Formación</h2>
+            <p>
+                Estudios colegio: Domingo Faustino Sarmiento <br>
+                Graduado como bachiller en Ciencias (BGU) <br>
+                Estudios de tercer nivel: Instituto Tecnológico Superior Quito (ITQ) <br>
+                Cursando la carrera de Desarrollo en Software
+            </p>
+        </div>
 
-        <h3 style="color: rgb(102, 10, 10); font-size: 25px;">Contacto</h3>
-        <!-- Subtítulo  -->
-        <p>
-        Teléfono: 0993344862 <br>
+        <!-- PERFIL -->
+        <div class="seccion">
+            <h2>Perfil</h2>
+            <p>
+                Soy una persona trabajadora que siempre está con ganas de seguir aprendiendo,
+                soy puntual, responsable, amigable, honesto y confiable. Estoy dispuesto a
+                dar lo mejor de mí siempre al momento de trabajar y a su vez ayudar a mis
+                compañeros cuando ellos lo requieran y seguir aumentando mi experiencia para
+                así lograr un trabajo impecable.
+            </p>
+        </div>
 
-        Email: joelpillajo0987@gmail.com
-        </p>
-        <!-- Cierre del párrafo -->
-    </div>
-    <!-- Cierre del div de contacto -->
+        <!-- HABILIDADES (lista desordenada) -->
+        <div class="seccion">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Puntual</li>
+                <li>Trabajo en equipo</li>
+                <li>Social</li>
+                <li>Rápido aprendizaje</li>
+                <li>Honesto</li>
+                <li>Respetuoso</li>
+                <li>Responsable</li>
+            </ul>
+        </div>
 
-    
-    <div style="border: solid 2px ; width: 500px;">
-        <!-- Contenedor más ancho 500px para la información de formación académica -->
+        <!-- EXPERIENCIA (lista ordenada) -->
+        <div class="seccion">
+            <h2>Experiencia académica</h2>
+            <ol>
+                <li>Bachillerato en Ciencias - Colegio Domingo Faustino Sarmiento</li>
+                <li>Ingreso al Instituto Tecnológico Superior Quito (ITQ)</li>
+                <li>Cursando Desarrollo en Software</li>
+                <li>Aprendizaje de HTML, CSS y tecnologías web</li>
+            </ol>
+        </div>
 
-        <h2 style="color: rgb(102, 10, 10); font-size: 25px;">
-            Formación
-        </h2>
-        <!-- Subtítulo  -->
+        <!-- TABLA DE LENGUAJES Y HERRAMIENTAS -->
+        <div class="seccion">
+            <h2>Lenguajes y herramientas</h2>
+            <table>
+                <tr>
+                    <th>N°</th>
+                    <th>Tecnología</th>
+                    <th>Tipo</th>
+                    <th>Nivel</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>HTML</td>
+                    <td>Lenguaje de marcado</td>
+                    <td>En aprendizaje</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>Hoja de estilos</td>
+                    <td>En aprendizaje</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Java</td>
+                    <td>Lenguaje de programación</td>
+                    <td>basico</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Git</td>
+                    <td>Control de versiones</td>
+                    <td>En aprendizaje</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total de tecnologías</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
 
-        <p>
-            Estudios colegio: Domingo Faustino Sarmiento <br>
-            <!-- <br> separa cada línea de información académica -->
-
-            Graduado como bachiller en Ciencias (BGU) <br>
-            Estudios de tercer nivel: Instituto Tecnológico Superior Quito (ITQ). <br>
-            Cursando la carrera de Desarrollo en Software
-        </p>
-        <!-- Párrafo con la información de formación académica -->
-    </div>
-    <!-- Cierre del div  -->
-
-   
-    <div style="border: solid 2px; width: 500px;">
-        <!-- Contenedor de 500px para la descripción del perfil personal -->
-
-        <h2 style="color: rgb(102, 10, 10); font-size: 25px;">
-            Perfil
-        </h2>
-        <!-- Subtítulo  -->
-
-        <p>
-            <!-- Párrafo con la descripción personal del candidato -->
-            Soy una persona trabajadora que siempre esta con ganas de seguir aprendiendo <br>
-            soy puntual, responsable, amigable, honesto y confiable, estoy dispuesto a <br>
-            dar lo mejor de mi siempre al momento de trabajar y a su vez ayudar a mis <br>
-            compañeros cuando ellos lo requieran y seguir aumentando mi experiencia para así <br>
-            lograr un trabajo impecable.
-        </p>
-    </div>
-    <!-- Cierre del div  -->
-
-   
-    <div style="border: solid 2px; width: 300px;">
-        <!-- Contenedor de 300px para listar las habilidades -->
-
-        <h2 style="color: rgb(102, 10, 10); font-size: 25px;">
-            Habilidades
-        </h2>
-        <!-- Subtítulo  -->
-
-        <p>
-            <!-- Cada habilidad separada por un salto de línea con <br> -->
-            Puntual <br>
-            Trabajo en equipo <br>
-            Social <br>
-            Rápido aprendizaje <br>
-            Honesto <br>
-            Respetuoso <br>
-            Responsable
-        </p>
     </div>
     <!-- Cierre del div  -->
 
