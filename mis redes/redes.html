@@ -1,35 +1,69 @@
 <!DOCTYPE html>
+<!-- Le dice al navegador que este archivo es HTML5 -->
 <html lang="es">
+<!-- El lang="es" indica que el idioma de la página es español -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redes sociales Joel Pillajo</title>
+    <!-- Esta sección no se ve en pantalla pero es necesaria para configurar la página -->
 
+    <meta charset="UTF-8">
+    <!-- Para que se vean bien las tildes, la ñ y otros caracteres especiales -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le dice a Internet Explorer que use su versión más moderna para mostrar la página -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para que la página se vea bien en celulares y tabletas, ajusta el tamaño automáticamente -->
+
+    <title>Redes sociales Joel Pillajo</title>
+    <!-- Es el texto que aparece en la pestaña del navegador -->
 
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <!-- Conecta este archivo con el CSS para aplicar los estilos visuales -->
+    <!-- El ../ significa que sube una carpeta para encontrar el archivo -->
 
-   
 </head>
+
 <body>
+    <!-- Aquí va todo lo que se ve en pantalla -->
+
     <div class="contenedor">
+        <!-- div con clase "contenedor" para centrar y limitar el ancho del contenido, el estilo viene del CSS -->
 
         <h1>Mis redes sociales</h1>
+        <!-- Título principal de la página -->
 
         <div class="seccion">
+            <!-- div con clase "seccion" que le pone borde, fondo blanco y espaciado, definido en el CSS -->
+
             <h2>Encuéntrame en:</h2>
-            <!-- Reemplaza TU_LINK con el link real de cada red -->
+            <!-- Subtítulo de la sección -->
+
             <ul class="lista-redes">
-                <li><a href="TU_LINK_INSTAGRAM" target="_blank">Instagram</a></li>
-                <li><a href="TU_LINK_FACEBOOK" target="_blank">Facebook</a></li>
-                <li><a href="TU_LINK_TIKTOK" target="_blank">TikTok</a></li>
+                <!-- Lista desordenada, los elementos salen con viñetas -->
+
+                <li>
+                    <a href="https://www.instagram.com/j.alex.19/" target="_blank">Instagram</a>
+                    <!-- Enlace a Instagram, target="_blank" hace que abra en una nueva pestaña -->
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/joel.pillajo.96" target="_blank">Facebook</a>
+                    <!-- Enlace a Facebook, también abre en una nueva pestaña -->
+                </li>
+
             </ul>
         </div>
 
         <a class="regresar" href="../index.html">← Regresar a la hoja de vida</a>
+        <!-- Enlace para volver a la página principal, la flecha ← es solo decorativa -->
+        <!-- El ../ sube una carpeta para encontrar el index.html -->
 
     </div>
+    <!-- Cierre del div contenedor -->
+
 </body>
+<!-- Cierre del body, fin del contenido visible -->
 
 </html>
+<!-- Fin del archivo HTML -->

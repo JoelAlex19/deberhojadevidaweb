@@ -1,42 +1,60 @@
 <!DOCTYPE html>
-<!-- Es la declaración del tipo de documento, indica que es HTML5 -->
+<!-- Le dice al navegador que este archivo es HTML5 -->
 <html lang="es">
-<!-- Es para indicar que el idioma es español -->
+<!-- El lang="es" indica que el idioma de la página es español -->
 
 <head>
-    <!-- Sección head: contiene metadatos e información del documento, no visible en la página -->
+    <!-- Esta sección no se ve en pantalla pero es necesaria para configurar la página -->
 
     <meta charset="UTF-8">
-    <!-- Permite usar tildes y caracteres especiales -->
+    <!-- Para que se vean bien las tildes, la ñ y otros caracteres especiales -->
 
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <!-- Indica al navegador Internet Explorer que use su versión más moderna para renderizar -->
+    <!-- Le dice a Internet Explorer que use su versión más moderna para mostrar la página -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hace la página responsiva: ajusta el ancho al dispositivo y establece el zoom inicial en 1 -->
+    <!-- Para que la página se vea bien en celulares y tabletas, ajusta el tamaño automáticamente -->
 
-    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Conecta este archivo con el CSS para aplicar todos los estilos visuales -->
+
     <title>Hoja de vida joel deber</title>
+    <!-- Es el texto que aparece en la pestaña del navegador -->
+
 </head>
 
 <body>
+    <!-- Aquí va todo lo que se ve en pantalla -->
+
     <div class="contenedor">
+        <!-- div con clase "contenedor" para centrar y limitar el ancho del contenido, el estilo viene del CSS -->
 
-        <!-- TÍTULO -->
         <h1>Hoja de vida</h1>
+        <!-- Título principal de la página -->
 
-        <!-- IMAGEN AL INICIO CENTRADA -->
+        <!-- FOTO DE PERFIL -->
         <div class="seccion" style="text-align: center;">
+            <!-- div con clase "seccion" y el texto centrado con style directo -->
+
             <h2>Foto de perfil</h2>
-            <img src="img/descarga.jpg" alt="Foto de perfil" width="300px" height="300px">
+            <!-- Subtítulo de la sección -->
+
+            <img src="img/istockphoto-517998264-612x612.jpg" alt="Foto de perfil" width="300px" height="300px">
+            <!-- Muestra la foto de perfil, src es la ruta donde está guardada la imagen -->
+            <!-- alt es el texto que aparece si la imagen no carga -->
+            <!-- width y height definen el tamaño que ocupa en pantalla -->
         </div>
 
-        <!-- DATOS PERSONALES -->
+       
         <div class="seccion">
+            <!-- Nueva sección con borde y fondo blanco definido en el CSS -->
+
             <h2>Datos personales</h2>
+            <!-- Subtítulo de la sección -->
+
             <p>
                 Nombres: Joel Alexander <br>
+                <!-- br salta a la siguiente línea sin crear un nuevo párrafo -->
                 Apellidos: Pillajo Simbaña <br>
                 Cédula de identidad: 1755864327 <br>
                 Edad: 20 años <br>
@@ -46,50 +64,75 @@
                 Sexo: Masculino <br>
                 Dirección: Llano Chico
             </p>
+            <!-- Párrafo con toda la información personal, cada dato en su propia línea -->
         </div>
 
-        <!-- CONTACTO -->
+       
         <div class="seccion">
+            <!-- Sección de contacto con el mismo estilo de borde y fondo -->
+
             <h3>Contacto</h3>
+            <!-- Subtítulo más pequeño que h2 -->
+
             <p>
                 Teléfono: 0993344862 <br>
                 Email: joelpillajo0987@gmail.com
+                <!-- Información de contacto, cada dato en su propia línea -->
             </p>
 
-            <!-- ENLACE A PÁGINA DE REDES SOCIALES -->
             <h3 style="margin-top: 12px;">Redes sociales</h3>
+            <!-- Subtítulo con un poco de espacio arriba para separarlo del contacto -->
+
             <div class="nav">
+                <!-- div para agrupar el enlace de redes sociales -->
+
                 <a href="mis redes/redes.html">Ver mis redes sociales</a>
+                <!-- Enlace que lleva a la página de redes sociales -->
             </div>
         </div>
 
-        <!-- FORMACIÓN -->
+      
         <div class="seccion">
+            <!-- Sección de estudios y formación académica -->
+
             <h2>Formación</h2>
+            <!-- Subtítulo de la sección -->
+
             <p>
                 Estudios colegio: Domingo Faustino Sarmiento <br>
                 Graduado como bachiller en Ciencias (BGU) <br>
                 Estudios de tercer nivel: Instituto Tecnológico Superior Quito (ITQ) <br>
                 Cursando la carrera de Desarrollo en Software
+                <!-- Historial de estudios, cada nivel en su propia línea -->
             </p>
         </div>
 
-        <!-- PERFIL -->
+     
         <div class="seccion">
+            <!-- Sección con la descripción personal -->
+
             <h2>Perfil</h2>
+            <!-- Subtítulo de la sección -->
+
             <p>
                 Soy una persona trabajadora que siempre está con ganas de seguir aprendiendo,
                 soy puntual, responsable, amigable, honesto y confiable. Estoy dispuesto a
                 dar lo mejor de mí siempre al momento de trabajar y a su vez ayudar a mis
                 compañeros cuando ellos lo requieran y seguir aumentando mi experiencia para
                 así lograr un trabajo impecable.
+                <!-- Párrafo de presentación personal -->
             </p>
         </div>
 
-        <!-- HABILIDADES (lista desordenada) -->
+    
         <div class="seccion">
+            <!-- Sección con lista de habilidades personales -->
+
             <h2>Habilidades</h2>
+            <!-- Subtítulo de la sección -->
+
             <ul>
+                <!-- Lista desordenada, cada elemento sale con viñeta automáticamente -->
                 <li>Puntual</li>
                 <li>Trabajo en equipo</li>
                 <li>Social</li>
@@ -97,66 +140,89 @@
                 <li>Honesto</li>
                 <li>Respetuoso</li>
                 <li>Responsable</li>
+                <!-- Cada li es un elemento de la lista -->
             </ul>
         </div>
 
-        <!-- EXPERIENCIA (lista ordenada) -->
+       
         <div class="seccion">
+            <!-- Sección con la trayectoria académica en orden -->
+
             <h2>Experiencia académica</h2>
+            <!-- Subtítulo de la sección -->
+
             <ol>
+                <!-- Lista ordenada, los elementos salen numerados automáticamente -->
                 <li>Bachillerato en Ciencias - Colegio Domingo Faustino Sarmiento</li>
                 <li>Ingreso al Instituto Tecnológico Superior Quito (ITQ)</li>
                 <li>Cursando Desarrollo en Software</li>
                 <li>Aprendizaje de HTML, CSS y tecnologías web</li>
+                <!-- Cada li es un paso de la trayectoria en orden cronológico -->
             </ol>
         </div>
 
-        <!-- TABLA DE LENGUAJES Y HERRAMIENTAS -->
+
         <div class="seccion">
+            <!-- Sección con tabla de tecnologías que maneja -->
+
             <h2>Lenguajes y herramientas</h2>
+            <!-- Subtítulo de la sección -->
+
             <table>
+                <!-- Tabla para mostrar las tecnologías de forma organizada, el estilo viene del CSS -->
+
                 <tr>
+                    <!-- tr es una fila de la tabla -->
                     <th>N°</th>
                     <th>Tecnología</th>
                     <th>Tipo</th>
                     <th>Nivel</th>
+                    <!-- th es el encabezado de cada columna, sale en negrilla y con fondo rojo por el CSS -->
                 </tr>
+
                 <tr>
                     <td>1</td>
                     <td>HTML</td>
                     <td>Lenguaje de marcado</td>
                     <td>En aprendizaje</td>
+                    <!-- td es cada celda normal de datos -->
                 </tr>
+
                 <tr>
                     <td>2</td>
                     <td>CSS</td>
                     <td>Hoja de estilos</td>
                     <td>En aprendizaje</td>
                 </tr>
+
                 <tr>
                     <td>3</td>
                     <td>Java</td>
                     <td>Lenguaje de programación</td>
-                    <td>basico</td>
+                    <td>Básico</td>
                 </tr>
+
                 <tr>
                     <td>4</td>
                     <td>Git</td>
                     <td>Control de versiones</td>
                     <td>En aprendizaje</td>
                 </tr>
+
                 <tr>
                     <td colspan="3">Total de tecnologías</td>
+                    <!-- colspan="3" une las primeras 3 celdas en una sola -->
                     <td>4</td>
                 </tr>
+
             </table>
         </div>
 
     </div>
-    <!-- Cierre del div  -->
+    <!-- Cierre del div contenedor -->
 
 </body>
-<!-- Cierre del body -->
+<!-- Cierre del body, fin del contenido visible -->
 
 </html>
-<!-- Cierre de la etiqueta raíz html, fin del documento -->
+<!-- Fin del archivo HTML -->
